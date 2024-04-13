@@ -74,10 +74,10 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {
-              "browserTarget": "digital-banking-web:build:production"
+              "buildTarget": "digital-banking-web:build:production"
             },
             "development": {
-              "browserTarget": "digital-banking-web:build:development"
+              "buildTarget": "digital-banking-web:build:development"
             }
           },
           "defaultConfiguration": "development"
@@ -85,7 +85,7 @@
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "digital-banking-web:build"
+            "buildTarget": "digital-banking-web:build"
           }
         },
         "test": {
@@ -107,6 +107,5 @@
         }
       }
     }
-  },
-  "defaultProject": "digital-banking-web"
+  }
 }
